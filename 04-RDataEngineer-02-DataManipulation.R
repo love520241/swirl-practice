@@ -26,3 +26,7 @@ mutate(flights,gain = arr_delay - dep_delay)
 summarise(flights, mean(dep_delay, na.rm = TRUE)) #計算平均
 sample_n(flights, 10)              #取樣
 sample_frac(flights, 0.01)
+df <- group_by(flights, month)
+
+answer05
+View(cl_info)
